@@ -1,5 +1,32 @@
+@font-face {
+  font-family: 'robotoregular';
+  src: url('webfontkit-20200415-185218/roboto-regular-webfont.woff2') format('woff2'),
+       url('webfontkit-20200415-185218/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url('webfontkit-20200415-185218/roboto-thin-webfont.woff2') format('woff2'),
+       url('webfontkit-20200415-185218/roboto-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('webfontkit-20200415-185218/roboto-light-webfont.woff2') format('woff2'),
+       url('webfontkit-20200415-185218/roboto-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 body {
-  font-family: Roboto;
+  font-family: 'robotoregular';
   font-style: normal;
   font-weight: normal;
   background:  #D1D6E8;;
@@ -18,11 +45,10 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
+  font-family: 'robotoregular';
   font-size: 34px;
   line-height: 100px;
-  /* display: flex; */
   align-items: center;
-  /* margin: 4px 2px; */
   cursor: pointer;
 }
 .buttonTake button:hover {
@@ -43,8 +69,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   font-size: 34px;
+  font-family: 'robotoregular';
   line-height: 100px;
-  /* display: flex; */
   align-items: center;
   cursor: pointer;
 }
@@ -131,7 +157,7 @@ body {
   height: 33px;
   left: 39px;
   top: 140px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
@@ -152,7 +178,7 @@ body {
   height: 33px;
   left: 384px;
   top: 140px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
@@ -174,7 +200,7 @@ body {
   height: 33px;
   left: 729px;
   top: 140px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
@@ -195,7 +221,7 @@ body {
   height: 33px;
   left: 1081px;
   top: 140px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
@@ -216,7 +242,7 @@ body {
   height: 33px;
   left: 191px;
   top: 600px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
@@ -237,8 +263,9 @@ body {
   width: 292px;
   height: 71px;
   left: 992px;
-  top: 739px;
+  top: 665px;
   background: #A2DBAF;
+  font-family: 'robotoregular';
   font-size: 28px;
   line-height: 71px;
   text-align: center;
