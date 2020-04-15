@@ -1,0 +1,127 @@
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  background:  #D1D6E8;;
+  text-align: center;
+
+}
+.buttonTake {
+  background-color:  #DAD8D8;;
+  border:  1px solid #FFFFFF;
+  color:black;
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  left: 509px;
+  top: 112px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 36px;
+  line-height: 100px;
+  /* display: flex; */
+  align-items: center;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
+.buttonTake:hover {
+  background-color: whiteSmoke;
+  color: black;
+  align-content: center;
+}
+.buttonTeach {
+  background-color:  #DAD8D8;;
+  border:  1px solid #FFFFFF;
+  color:black;
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  left: 988px;
+  top: 112px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 36px;
+  line-height: 100px;
+  /* display: flex; */
+  align-items: center;
+  cursor: pointer;
+}
+.buttonTeach:hover {
+  background-color: whiteSmoke;
+  color: black;
+  align-content: center;
+}
+.friends{
+  position: absolute;
+  width: 350px;
+  height: 770px;
+  left: 22px;
+  top: 23px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.classes{
+  position: absolute;
+  width: 491px;
+  height: 87px;
+  left: 491px;
+  top: 292px;
+  font-size: 28x;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.monday{
+  position: absolute;
+  width: 153px;
+  height: 415px;
+  left: 491px;
+  top: 375px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.tuesday{
+  position: absolute;
+  width: 153px;
+  height: 415px;
+  left: 665px;
+  top: 375px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.wednesday{
+  position: absolute;
+  width: 153px;
+  height: 415px;
+  left: 839px;
+  top: 375px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.thursday{
+  position: absolute;
+  width: 153px;
+  height: 415px;
+  left: 1013px;
+  top: 375px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.friday{
+  position: absolute;
+  width: 153px;
+  height: 415px;
+  left: 1187px;
+  top: 375px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
