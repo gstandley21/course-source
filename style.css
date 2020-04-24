@@ -710,6 +710,68 @@ body {
   background-color: #313131;
   color: white;
   align-content: center;
-
 }
-  
+/* Cooking Class */
+#container1 {
+  position:absolute;
+  top:100px;
+  left:675px;
+	margin: 0px auto;
+	width:475px;
+	height: 345px;
+  border: 1px solid #FFFFFF;
+}
+#videoElement1 {
+	width: 450px;
+  height: 345px;
+}
+#cimg1{
+  position:absolute;
+  top:100px;
+  left:1175px;
+  width:215px;
+  height:165px;
+  border: 1px solid #FFFFFF;
+}
+#cimg2{
+  position:absolute;
+  top:290px;
+  left:1175px;
+  width:215px;
+  height:165px;
+  border: 1px solid #FFFFFF;
+}
+#cimg3{
+  position:absolute;
+  top:470px;
+  left:675px;
+  width:225px;
+  height:175px;
+  border: 1px solid #FFFFFF;
+}
+#cimg4{
+  position:absolute;
+  top:470px;
+  left:925px;
+  width:225px;
+  height:175px;
+  border: 1px solid #FFFFFF;
+}
+#cimg5{
+  position:absolute;
+  top:470px;
+  left:1175px;
+  width:215px;
+  height:175px;
+  border: 1px solid #FFFFFF;
+}
+#recipe{
+  position:absolute;
+  top:470px;
+  left:50px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:600px;
+  height:175px;
+  font-size:14px;
+} 
