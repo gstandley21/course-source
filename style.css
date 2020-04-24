@@ -564,9 +564,6 @@ body {
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
-.chloe{
-  
-}
 .join {
   position: absolute;
   width:334px;
@@ -594,5 +591,11 @@ body {
   line-height:40px;
   text-align:center;
   align-items:center;
+}
 
+/* Fitness Class */
+.video{
+  position: absolute;
+  left:100px;
+  top:100px;
 }
