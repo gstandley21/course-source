@@ -622,3 +622,39 @@ body {
   background-color: #DAD8D8;
   border: 1px solid #FFFFFF;
 }
+#img1{
+  position:absolute;
+  top:500px;
+  left:50px;
+  width:275px;
+  height:175px;
+  border: 1px solid #FFFFFF;
+}
+#stats1{
+  position: absolute;
+  top:500px;
+  left:326px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:100px;
+  height:175px;
+  font-size:14px;
+}
+#img2{
+  position:absolute;
+  top:500px;
+  left:450px;
+  width:275px;
+  height:175px;
+  border: 1px solid #FFFFFF;
+}
+#stats2{
+  position:absolute;
+  top:500px;
+  left:725px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:100px;
+  height:175px;
+  font-size:14px;
+}
