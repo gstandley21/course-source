@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Beauty Class</title>
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type = "text/css" href="style.css">
+  </head>
+  <header>
+      <div class="header">
+        <h1>Rihanna’s Beauty Class</h1>
+      </div>
+    </header>
+    <body>
+      <div class="video">
+        <iframe width="600" height="345" src="https://www.youtube.com/embed/KONe4SNFA64?autoplay=1">
+        </iframe>
+      </div>
+      <div id="container">
+          <video autoplay="true" id="videoElement">
+          </video>
+      </div>
+        <script>
+          var video = document.querySelector("#videoElement");
+
+          if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+            video.srcObject = stream;
+          })
+          .catch(function (err0r) {
+          console.log("Something went wrong!");
+          });
+          }
+        </script>
+      <div id="stats">
+        <h3>Palette</h3>
+      <div id=“color1”>
+      </div>
+      <div id="img1">
+        <img src="/Users/tristansenkowski/Downloads/AdobeStock_61810204_Preview.jpeg" alt=“makeup photo 1" style="width:215px;height:175px;">
+      </div>
+      <div id="stats1">
+        <h3>Palette</h3>
+   
+      </div>
+      <div id="img2">
+        <img src="/Users/tristansenkowski/Downloads/AdobeStock_307966172_Preview.jpeg" alt=“makeup photo 2" style="width:215px;height:175px;">
+      </div>
+      <div id="stats2">
+        <h3>Palette</h3>
+       
+      </div>
+      <div id="img3">
+        <img src="/Users/tristansenkowski/Downloads/makeup1.jpg" alt=“makeup photo 3" style="width:215px;height:175px;">
+      </div>
+      <div id="stats3">
+        <h3>Palette</h3>
+        
+      </div>
+      <div id="img4">
+        <img src="/Users/tristansenkowski/Downloads/AdobeStock_232718554_Preview.jpeg" alt=“makeup photo 4" style="width:215px;height:175px;">
+      </div>
+      <div id="stats4">
+        <h3>Palette</h3>
+     
+      </div>
+      <div class ="leaveButton">
+          <a href="index.html"><button>Leave Class</button></a>
+      </div>
+    </body>
+</html>
