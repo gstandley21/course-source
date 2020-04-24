@@ -17,5 +17,28 @@
         <iframe width="600" height="345" src="https://www.youtube.com/embed/2pLT-olgUJs?autoplay=1">
         </iframe>
       </div>
+      <div id="container">
+          <video autoplay="true" id="videoElement">
+          </video>
+      </div>
+        <script>
+          var video = document.querySelector("#videoElement");
+
+          if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+            video.srcObject = stream;
+          })
+          .catch(function (err0r) {
+          console.log("Something went wrong!");
+          });
+          }
+        </script>
+      <div id="stats">
+        <h3>Stats</h3>
+        Heart Rate: 140
+        <br>Calories: 160
+        <br>Steps: 500
+      </div>
     </body>
 </html>
