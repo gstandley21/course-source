@@ -775,3 +775,17 @@ body {
   height:175px;
   font-size:14px;
 } 
+/* Teach Fitness */
+#container2{
+  position:absolute;
+  top:100px;
+  left:50px;
+  margin: 0px auto;
+	width:475px;
+	height: 345px;
+  border: 1px solid #FFFFFF;
+}
+#videoElement2 {
+	width: 450px;
+  height: 345px;
+}
