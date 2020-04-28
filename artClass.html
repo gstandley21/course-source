@@ -1,83 +1,61 @@
 <!DOCTYPE html> 
 <html>
   <head>
-    <title>Art Class</title>
-    <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" type = "text/css" href="style.css">
+      <title>Art Class</title>
+      <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta charset="utf-8">
+          <link rel="stylesheet" type = "text/css" href="style.css">
   </head>
   <header>
-      <div class="header">
-        <h1>Bob Ross' TEST Art Class</h1>
+    <div class="header">
+      <h1>Bob Ross' Art Class</h1>
+    </div>
+  </header>
+  <body>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lLWEXRAnQd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </iframe>
+    </div>
+    <div id="container1">
+      <video autoplay="true" id="videoElement1">
+      </video>
       </div>
-    </header>
-    <body>
-      <div class="video">
- 			<iframe width="560" height="315" src="https://www.youtube.com/embed/lLWEXRAnQd0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </iframe>
-      </div>
-      <div id="container">
-          <video autoplay="true" id="videoElement">
-          </video>
-      </div>
-        <script>
-          var video = document.querySelector("#videoElement");
+      <script>
+        var video = document.querySelector("#videoElement1");
 
-          if (navigator.mediaDevices.getUserMedia) {
-            navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-            video.srcObject = stream;
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+          .then(function (stream) {
+          video.srcObject = stream;
           })
-          .catch(function (err0r) {
-          console.log("Something went wrong!");
-          });
-          }
-        </script>
-      <div id="stats">
-        <h3>Stats</h3>
-        Heart Rate: 140
-        <br>Calories: 160
-        <br>Steps: 500
+        .catch(function (err0r) {
+        console.log("Something went wrong!");
+        });
+      }
+      </script>
+      <div id="cimg1">
+        <img src="30087219-male-artist-standing-by-a-painting-on-an-easel-isolated-against-white-background.jpg" alt="art photo 1" style="width:215px;height:165px;">
       </div>
-      <div id="img1">
-        <img src="stock-photo-strong-beautiful-fitness-girl-in-athletic-workout-clothes-is-doing-a-plank-exercise-while-using-a-1497529061.jpg" alt="exercise photo 1" style="width:215px;height:175px;">
+      <div id="cimg2">
+        <img src="young-womanpaintinghouse-painter-FDT62K.jpg" alt="art photo 2" style="width:215px;height:165px;">
       </div>
-      <div id="stats1">
-        <h3>Stats</h3>
-        Heart Rate: 150
-        <br>Calories: 180
-        <br>Steps: 525
+      <div id="cimg3">
+        <img src="stock-photo-happy-painter-is-inspired-when-painting-artist-kissed-by-the-muse-funny-man-with-brush-and-329045831.jpg" alt="art photo 3" style="width:225px;height:175px;">
       </div>
-      <div id="img2">
-        <img src="stock-photo-asian-women-are-exercising-at-home-abdominal-exercises-sit-ups-364331810.jpg" alt="exercise photo 2" style="width:215px;height:175px;">
+      <div id="cimg4">
+        <img src="19422166-attractive-teen-girl-painter-drawing-portrait-with-oil-paints-professional-painter-at-work-over-whit.jpg" alt="cooking photo 4" style="width:225px;height:175px;">
       </div>
-      <div id="stats2">
-        <h3>Stats</h3>
-        Heart Rate: 160
-        <br>Calories: 200
-        <br>Steps: 515
+      <div id="cimg5">
+        <img src="craftsman-painter-stands-stairs-roller-full-portrait-over-white-background-32642150.jpg" alt="cooking photo 5" style="width:215px;height:175px;">
       </div>
-      <div id="img3">
-        <img src="stock-photo-young-fit-man-exercising-in-a-gym-379747825.jpg" alt="exercise photo 3" style="width:215px;height:175px;">
+      <div id="recipe">
+        <h3>Steps</h3>
+        1. Start with a blue background
+        <br>2. Fade in the sky
       </div>
-      <div id="stats3">
-        <h3>Stats</h3>
-        Heart Rate: 130
-        <br>Calories: 240
-        <br>Steps: 565
-      </div>
-      <div id="img4">
-        <img src="stock-photo-couple-exercising-together-man-and-woman-in-sports-wear-doing-workout-at-home-1464709727.jpg" alt="exercise photo 4" style="width:215px;height:175px;">
-      </div>
-      <div id="stats4">
-        <h3>Stats</h3>
-        Heart Rate: 125
-        <br>Calories: 230
-        <br>Steps:500
-      </div>
-      <div class ="leaveButton">
-          <a href="index.html"><button>Leave Class</button></a>
-      </div>
-    </body>
+     <div class ="leaveButton">
+        <a href="index.html"><button>Leave Class</button></a>
+    </div>
+  </body>
 </html>
