@@ -158,7 +158,7 @@ body {
   width: 313px;
   height: 33px;
   left: 39px;
-  top: 140px;
+  top: 80px;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
@@ -167,9 +167,9 @@ body {
 .rectangle1{
   position: absolute;
   width: 313px;
-  height: 400px;
+  height: 451px;
   left: 39px;
-  top: 201px; 
+  top: 150px; 
   background: #DAD8D8;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
@@ -177,9 +177,9 @@ body {
 #Art button{
   position: absolute;
   width: 186px;
-  height: 54px;
+  height: 74px;
   left: 103px;
-  top: 225px;
+  top: 170px;
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align:center;
@@ -193,9 +193,9 @@ body {
 #Beauty button{
   position: absolute;
   width: 186px;
-  height: 54px;
+  height: 74px;
   left: 103px;
-  top: 299px;
+  top: 254px;
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align:center;
@@ -209,9 +209,9 @@ body {
 #Cooking button{
   position: absolute;
   width: 186px;
-  height: 54px;
+  height: 74px;
   left: 103px;
-  top: 373px;
+  top: 338px;
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align:center;
@@ -225,9 +225,9 @@ body {
 #Fitness button{
   position: absolute;
   width: 186px;
-  height: 54px;
+  height: 74px;
   left: 103px;
-  top: 447px;
+  top: 422px;
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align:center;
@@ -241,9 +241,9 @@ body {
 #Other button{
   position: absolute;
   width: 186px;
-  height: 55px;
+  height: 74px;
   left: 103px;
-  top: 521px;
+  top: 506px;
   background: #C4C4C4;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align:center;
@@ -259,29 +259,56 @@ body {
   width: 313px;
   height: 33px;
   left: 384px;
-  top: 140px;
+  top: 80px;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
   color: #000000;
 }
-.rectangle2{
+
+#textdes{
   position: absolute;
   width: 313px;
-  height: 400px;
+  height: 200px;
   left: 384px;
-  top: 201px;
+  top: 150px;
   background: #DAD8D8;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
-
+  line-height:15px;
+  font-size:15px;
+  text-align:center;
 }
 .step3{
   position: absolute;
   width: 313px;
   height: 33px;
+  left: 384px;
+  top:340px;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+}
+#textmat{
+  position: absolute;
+  width: 313px;
+  height: 200px;
+  left: 384px;
+  top: 401px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  line-height:15px;
+  font-size:15px;
+  text-align:center;
+}
+.step4{
+  position: absolute;
+  width: 313px;
+  height: 33px;
   left: 729px;
-  top: 140px;
+  top:80px;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
@@ -290,9 +317,9 @@ body {
 .rectangle3{
   position: absolute;
   width: 313px;
-  height: 400px;
+  height: 200px;
   left: 729px;
-  top: 201px;
+  top: 150px;
   background: #DAD8D8;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
@@ -306,7 +333,7 @@ body {
   width:200px;
   height:75px;
   left:56px;
-  top:24px;
+  top:14px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor:pointer;
 
@@ -315,7 +342,7 @@ body {
   font-size:20px;
   position: absolute;
   left: 56px;
-  top: 24px;
+  top: 14px;
   width:200px;
   height:75px;
   opacity: 0;
@@ -327,63 +354,25 @@ body {
   width:200px;
   height:75px;
   left:56px;
-  top:116px;
+  top:106px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #file2{
   font-size:20px;
   position: absolute;
   left: 56px;
-  top:116px;
-  width:200px;
-  height:75px;
-  opacity: 0;
-}
-.btn3{
-  background:#C4C4C4;
-  font-size:18px;
-  position:absolute;
-  width:200px;
-  height:75px;
-  left:56px;
-  top:208px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#file3{
-  font-size:20px;
-  position: absolute;
-  left: 56px;
-  top:208px;
-  width:200px;
-  height:75px;
-  opacity: 0;
-}
-.btn4{
-  background:#C4C4C4;
-  font-size:18px;
-  position:absolute;
-  width:200px;
-  height:75px;
-  left:56px;
-  top:300px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#file4{
-  font-size:20px;
-  position: absolute;
-  left: 56px;
-  top:300px;
+  top:106px;
   width:200px;
   height:75px;
   opacity: 0;
 }
 
-.step4{
+.step6{
   position: absolute;
   width: 313px;
   height: 33px;
   left: 1081px;
-  top: 140px;
+  top: 80px;
   font-size: 20px;
   line-height: 33px;
   text-align: center;
@@ -392,14 +381,35 @@ body {
 .rectangle4{
   position: absolute;
   width: 313px;
-  height: 400px;
+  height: 451px;
   left: 1081px;
-  top: 201px;
+  top: 150px;
   background: #DAD8D8;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
 .step5{
+  position: absolute;
+  width: 313px;
+  height: 33px;
+  left: 729px;
+  top:340px;
+  font-size: 20px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+}
+.rectangle5{
+  position: absolute;
+  width: 313px;
+  height: 200px;
+  left: 729px;
+  top: 401px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.step7{
   position: absolute;
   width: 563px;
   height: 33px;
@@ -1020,7 +1030,7 @@ body {
   color: black;
   align-content: center;
 }
-/* Fitness Info */
+/* Fitness Info *
 #fMaterials{
   position: absolute;
   top:500px;
