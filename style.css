@@ -973,8 +973,9 @@ body {
 }
 #cIngredients{
   position: absolute;
-  top:250px;
-  left:760px;
+  position: absolute;
+  top:500px;
+  left:280px;
   width: 400px;
   height:200px;
   background-color: #DAD8D8;
@@ -991,8 +992,8 @@ body {
 }
 #cDescription{
   position: absolute;
-  top:500px;
-  left:280px;
+  top:250px;
+  left:760px;
   width: 400px;
   height:200px;
   background-color: #DAD8D8;
