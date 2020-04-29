@@ -775,3 +775,44 @@ body {
   height:175px;
   font-size:14px;
 } 
+/*Art Class Images*/
+#aimg1{
+  position:absolute;
+  top:500px;
+  left:1175px;
+  width:150px;
+  height:100px;
+  border: 1px solid #FFFFFF;
+}
+#aimg2{
+  position:absolute;
+  top:500px;
+  left:995px;
+  width:150px;
+  height:100px;
+  border: 1px solid #FFFFFF;
+}
+#aimg3{
+  position:absolute;
+  top:500px;
+  left:815px;
+  width:150px;
+  height:100px;
+  border: 1px solid #FFFFFF;
+}
+#aimg4{
+  position:absolute;
+  top:625px;
+  left:815px;
+  width:150px;
+  height:100px;
+  border: 1px solid #FFFFFF;
+}
+#aimg5{
+  position:absolute;
+  top:625px;
+  left:995px;
+  width:150px;
+  height:100px;
+  border: 1px solid #FFFFFF;
+}
