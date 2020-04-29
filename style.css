@@ -1015,9 +1015,18 @@ body {
   text-align: center;
   color: black;
 }
-
 .joinButton button:hover{
   background-color: #66C25C;
   color: black;
   align-content: center;
+}
+/* Fitness Info */
+#fMaterials{
+  position: absolute;
+  top:500px;
+  left:520px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
 }
