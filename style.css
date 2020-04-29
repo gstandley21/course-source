@@ -962,3 +962,61 @@ body {
   color: white;
   align-content: center;
 }
+#ctime{
+  position: absolute;
+  top:250px;
+  left:280px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
+#cIngredients{
+  position: absolute;
+  top:250px;
+  left:760px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
+#cMaterials{
+  position: absolute;
+  top:500px;
+  left:760px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
+#cDescription{
+  position: absolute;
+  top:500px;
+  left:280px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
+.current{
+  font-size:18px;
+}
+.joinButton button{
+  position: absolute;
+  width: 292px;
+  height: 60px;
+  left: 574px;
+  top: 140px;
+  background: #A2DBAF;
+  font-family: 'robotoregular';
+  font-size: 28px;
+  line-height:60px;
+  text-align: center;
+  color: black;
+}
+
+.joinButton button:hover{
+  background-color: #66C25C;
+  color: black;
+  align-content: center;
+}
