@@ -5,7 +5,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <link rel="stylesheet" type = "text/css" href="style.css">
+        <link rel="stylesheet" type = "text/css" href="style.css"> 
     </head>
     <header>
       <div class="header">
@@ -13,6 +13,7 @@
       </div>
     </header>
     <body>
+       
         <div class ="backButton">
             <a href="index.html"><button>Back</button></a>
         </div>
@@ -20,25 +21,19 @@
         <h2>1. Choose a Topic</h2>
      </div>
       <div class ="rectangle1"></div>
-      <div class="Art">
+      <div id="Art">
         <button onclick="buttonClicked(this, '#555555', 'white')">Art</button>
-        <script>
-          function buttonClicked(elmnt, backClr, clr){
-            elmnt.style.backgroundColor = backClr;
-            elmnt.style.color = clr;
-          }
-        </script>
       </div>
-      <div class="Beauty">
+      <div id="Beauty">
         <button onClick="buttonClicked(this, '#555555', 'white')">Beauty</button>
       </div>
-      <div class="Cooking">
+      <div id="Cooking">
         <button onClick="buttonClicked(this, '#555555', 'white')">Cooking</button>
       </div>
-      <div class="Fitness">
+      <div id="Fitness">
         <button onClick="buttonClicked(this, '#555555', 'white')">Fitness</button>
       </div>
-      <div class="Other">
+      <div id="Other">
         <button onClick="buttonClicked(this, '#555555', 'white')">Other</button>
       </div>
      <div class="step2">
@@ -65,12 +60,61 @@
       <div class="step5">
         <h2>5. Set Date & Time</h2>
       </div>
+      <div id="doneButton"></div>
       <form>
         <input type="datetime-local" id="classtime" name="classtime">
-      </form>    
-      <div class="doneButton">
-        <a href="#"><button>Done</button></a>
-      </div>
+      </form>  
+      <script>
+          let type;
+          
+          function buttonClicked(elmnt, backClr, clr){
+            if(elmnt.style.backgroundColor != 'rgb(85, 85, 85)'){
+              elmnt.style.backgroundColor = backClr;
+              elmnt.style.color = clr;
+              console.log(elmnt.outerHTML);
+              if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Art</button>'){
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="teachArt.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Beauty</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="teachBeauty.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Cooking</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="teachCooking.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Fitness</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="teachFitness.html";
+                console.log(type);
+              }else{
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                type="teachFitness.html";
+              }
+            } else{
+              elmnt.style.backgroundColor = '#C4C4C4';
+              elmnt.style.color='black';
+            }
+            document.getElementById("doneButton").innerHTML="<a href=" + type +"><button>Done</button></a>";
+          }
+       </script> 
+     
   </body>
     
 </html>

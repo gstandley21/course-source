@@ -174,7 +174,7 @@ body {
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
-.Art button{
+#Art button{
   position: absolute;
   width: 186px;
   height: 54px;
@@ -185,12 +185,12 @@ body {
   text-align:center;
   font-size: 20px;
 }
-.Art button:hover{
+#Art button:hover{
   background-color: #9F9F9F;
   color: black;
   align-content: center;
 }
-.Beauty button{
+#Beauty button{
   position: absolute;
   width: 186px;
   height: 54px;
@@ -201,12 +201,12 @@ body {
   text-align:center;
   font-size: 20px;
 }
-.Beauty button:hover{
+#Beauty button:hover{
   background-color: #9F9F9F;
   color: black;
   align-content: center;
 }
-.Cooking button{
+#Cooking button{
   position: absolute;
   width: 186px;
   height: 54px;
@@ -217,12 +217,12 @@ body {
   text-align:center;
   font-size: 20px;
 }
-.Cooking button:hover{
+#Cooking button:hover{
   background-color: #9F9F9F;
   color: black;
   align-content: center;
 }
-.Fitness button{
+#Fitness button{
   position: absolute;
   width: 186px;
   height: 54px;
@@ -233,12 +233,12 @@ body {
   text-align:center;
   font-size: 20px;
 }
-.Fitness button:hover{
+#Fitness button:hover{
   background-color: #9F9F9F;
   color: black;
   align-content: center;
 }
-.Other button{
+#Other button{
   position: absolute;
   width: 186px;
   height: 55px;
@@ -249,7 +249,7 @@ body {
   text-align:center;
   font-size: 20px;
 }
-.Other button:hover{
+#Other button:hover{
   background-color: #9F9F9F;
   color: black;
   align-content: center;
@@ -422,7 +422,7 @@ body {
   box-sizing: border-box;
   text-align:center;
 }
-.doneButton button{
+#doneButton button{
   position: absolute;
   width: 292px;
   height: 71px;
@@ -435,7 +435,7 @@ body {
   text-align: center;
   color: black;
 }
-.doneButton button:hover{
+#doneButton button:hover{
   background-color: #66C25C;
   color: black;
   align-content: center;
