@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+      <title>Teach Art</title>
+      <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta charset="utf-8">
+          <link rel="stylesheet" type = "text/css" href="style.css">
+  </head>
+  <header>
+    <div class="header">
+      <h1>Your Art Class</h1>
+    </div>
+  </header>
+  <body>
+    <div id="container3">
+      <video autoplay="true" id="videoElement1">
+      </video>
+      </div>
+      <script>
+        var video = document.querySelector("#videoElement1");
+
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+          .then(function (stream) {
+          video.srcObject = stream;
+          })
+        .catch(function (err0r) {
+        console.log("Something went wrong!");
+        });
+      }
+      </script>
+      <div id="taimg1">
+        <img src="30087219-male-artist-standing-by-a-painting-on-an-easel-isolated-against-white-background.jpg" alt="art photo 1" style="width:250px;height:200px;">
+      </div>
+      <div id="taimg2">
+        <img src="young-womanpaintinghouse-painter-FDT62K.jpg" alt="art photo 2" style="width:250px;height:200px;">
+      </div>
+      <div id="taimg3">
+        <img src="stock-photo-happy-painter-is-inspired-when-painting-artist-kissed-by-the-muse-funny-man-with-brush-and-329045831.jpg" alt="art photo 3" style="width:250px;height:200px;">
+      </div>
+      <div id="taimg4">
+        <img src="19422166-attractive-teen-girl-painter-drawing-portrait-with-oil-paints-professional-painter-at-work-over-whit.jpg" alt="art photo 4" style="width:250px;height:200px;">
+      </div>
+      <div id="taimg5">
+        <img src="craftsman-painter-stands-stairs-roller-full-portrait-over-white-background-32642150.jpg" alt="art photo 5" style="width:250px;height:200px;">
+      </div>
+      <div id="taimg6">
+        <img src="GettyImages-922707682-5b90467bc9e77c0025931eef.jpg" alt="art photo 6" style="width:250px;height:200px;">
+      </div>
+      <div id="feedback1">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback2">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback3">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback4">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback5">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback6">
+        <h3>Feedback</h3>
+      </div>
+      <div id="artinstructions">
+        <h3>Instructions</h3>
+        1. Begin to paint the background blue.
+        <br>2. Fade the blue sky into the horizon.
+        <br>3. Add blots of white in the sky for clouds.
+      </div>
+     <div class ="leaveButton">
+        <a href="index.html"><button>Leave Class</button></a>
+    </div>
+  </body>
+</html>

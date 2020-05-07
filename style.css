@@ -954,6 +954,134 @@ body {
   color: white;
   align-content: center;
 }
+/*Teach Art*/
+#container3 {
+  position:absolute;
+  top:100px;
+  left:100px;
+  margin: 0px auto;
+  width:475px;
+  height: 345px;
+  border: 1px solid #FFFFFF;
+}
+#taimg1{
+  position:absolute;
+  top:100px;
+  left:590px;
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#taimg2{
+  position:absolute;
+  top:100px;
+  left:875px;
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#taimg3{
+  position:absolute;
+  top:100px;
+  left:1160px; 
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#taimg4{
+  position:absolute;
+  top:400px;
+  left:590px;
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#taimg5{
+  position:absolute;
+  top:400px;
+  left:875px;
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#taimg6{
+  position:absolute;
+  top:400px;
+  left:1160px;
+  width:270px;
+  height:210px;
+  border: 1px solid #FFFFFF;
+}
+#feedback1{
+  position:absolute;
+  top:330px;
+  left:590px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#feedback2{
+  position:absolute;
+  top:330px;
+  left:875px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#feedback3{
+  position:absolute;
+  top:330px;
+  left:1160px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#feedback4{
+  position:absolute;
+  top:630px;
+  left:590px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#feedback5{
+  position:absolute;
+  top:630px;
+  left:875px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#feedback6{
+  position:absolute;
+  top:630px;
+  left:1160px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:270px;
+  height:50px;
+  font-size:14px;
+} 
+#artinstructions{
+  position:absolute;
+  top:470px;
+  left:165px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  width:350px;
+  height:300px;
+  font-size:14px;
+} 
 /* Cooking Info */
 .backButton1 button{
   position: absolute;
@@ -1058,4 +1186,96 @@ body {
   background-color: #4BA0DB;
   color: black;
   align-content: center;
+}
+.greenRectangle{
+  position:absolute;
+  top:160px;
+  left:1225px;
+  width:100px;
+  height:55px;
+  background-color:#98FB98;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.blueRectangle{
+  position:absolute;
+  top:230px;
+  left:1225px;
+  width:100px;
+  height:55px;
+  background-color:#AFEEEE;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.brownRectangle{
+  position:absolute;
+  top:300px;
+  left:1225px;
+  width:100px;
+  height:55px;
+  background-color:#DEB887;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.greyRectangle{
+  position:absolute;
+  top:370px;
+  left:1225px;
+  width:100px;
+  height:55px;
+  background-color:#708090;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.circle1:before{
+  position:absolute;
+  top:486px;
+  left:1287px;
+  width:100px;
+  height:55px;
+  content:'\25CF';
+  background: rgba(0,0,0,0);
+  color: slategray;
+  font-size:150px;
+}
+.circle2:before{
+  position:absolute;
+  top:486px;
+  left:947px;
+  width:100px;
+  height:55px;
+  content:'\25CF';
+  background: rgba(0,0,0,0);
+  color: paleturquoise;
+  font-size:150px;
+}
+.circle3:before{
+  position:absolute;
+  top:486px;
+  left:607px;
+  width:100px;
+  height:55px;
+  content:'\25CF';
+  background: rgba(0,0,0,0);
+  color: #DEB887;
+  font-size:150px;
+}
+.circle4:before{
+  position:absolute;
+  top:486px;
+  left:267px;
+  width:100px;
+  height:55px;
+  content:'\25CF';
+  background: rgba(0,0,0,0);
+  color: #98FB98;
+  font-size:150px;
 }
