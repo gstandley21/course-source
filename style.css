@@ -1040,3 +1040,22 @@ body {
   background-color: #DAD8D8;
   border: 1px solid #FFFFFF;
 }
+/* Sign Up */
+.signUpButton button{
+  position: absolute;
+  width: 292px;
+  height: 60px;
+  left: 574px;
+  top: 140px;
+  background: #55B1F0;
+  font-family: 'robotoregular';
+  font-size: 28px;
+  line-height:60px;
+  text-align: center;
+  color: black;
+}
+.signUpButton button:hover{
+  background-color: #4BA0DB;
+  color: black;
+  align-content: center;
+}
