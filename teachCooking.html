@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+      <title>Teach Cooking</title>
+      <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta charset="utf-8">
+          <link rel="stylesheet" type = "text/css" href="style.css">
+  </head>
+  <header>
+    <div class="header">
+      <h1>Your Cooking Class</h1>
+    </div>
+  </header>
+  <body>
+    <div id="container4">
+      <video autoplay="true" id="videoElement1">
+      </video>
+      </div>
+      <script>
+        var video = document.querySelector("#videoElement1");
+
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+          .then(function (stream) {
+          video.srcObject = stream;
+          })
+        .catch(function (err0r) {
+        console.log("Something went wrong!");
+        });
+      }
+      </script>
+      <div id="tcimg1">
+        <img src="stock-photo-young-blonde-woman-cooking-in-the-kitchen-healthy-food-dieting-concept-healthy-lifestyle-1120096310.jpg" alt="cooking photo 1" style="width:250px;height:200px;">
+      </div>
+      <div id="tcimg2">
+        <img src="stock-photo-woman-standing-by-the-stove-in-the-kitchen-cooking-and-smelling-the-nice-aromas-from-her-meal-in-a-323107886.jpg" alt="cooking photo 2" style="width:250px;height:200px;">
+      </div>
+      <div id="tcimg3">
+        <img src="stock-photo-young-woman-cooking-in-her-kitchen-standing-near-stove-598244309.jpg" alt="cooking photo 3" style="width:250px;height:200px;">
+      </div>
+      <div id="tcimg4">
+        <img src="stock-photo-young-beautiful-brunette-in-casual-clothes-preparing-healthy-food-in-kitchen-at-daytime-1689249370.jpg" alt="cooking photo 4" style="width:250px;height:200px;">
+      </div>
+      <div id="tcimg5">
+        <img src="stock-photo-cooking-couples-elders-kitchen-food-happiness-family-fresh-meal-home-concept-343042451.jpg" alt="cooking photo 5" style="width:250px;height:200px;">
+      </div>
+      <div id="tcimg6">
+        <img src="download.jpg" alt="cooking photo 5" style="width:250px;height:200px;">
+      </div>
+      <div id="feedback1">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback2">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback3">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback4">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback5">
+        <h3>Feedback</h3>
+      </div>
+      <div id="feedback6">
+        <h3>Feedback</h3>
+      </div>
+      <div id="trecipe">
+        <h3>Recipe Steps</h3>
+        1. Prepare the chicken brine.
+        <br>2. Preheat oven to 350F.
+        <br>3. Finely dice onions.
+      </div>
+     <div class ="leaveButton">
+        <a href="index.html"><button>Leave Class</button></a>
+    </div>
+  </body>
+</html>
