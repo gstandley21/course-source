@@ -1,79 +1,72 @@
-<!DOCTYPE html> 
-<html>
-  <head>
-      <title>Teach Cooking</title>
-      <meta name="description" content="">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta charset="utf-8">
-          <link rel="stylesheet" type = "text/css" href="style.css">
-  </head>
-  <header>
-    <div class="header">
-      <h1>Your Beauty Class</h1>
-    </div>
-  </header>
-  <body>
-    <div id="container4">
-      <video autoplay="true" id="videoElement1">
-      </video>
-      </div>
-      <script>
-        var video = document.querySelector("#videoElement1");
-
-        if (navigator.mediaDevices.getUserMedia) {
-          navigator.mediaDevices.getUserMedia({ video: true })
-          .then(function (stream) {
-          video.srcObject = stream;
-          })
-        .catch(function (err0r) {
-        console.log("Something went wrong!");
-        });
-      }
-      </script>
-      <div id="tcimg1">
-        <img src="BeautyTeach1.jpeg" style="width:250px;height:200px;">
-      </div>
-      <div id="tcimg2">
-        <img src="BeatuyTeach7.jpeg" style="width:250px;height:200px;">
-      </div>
-      <div id="tcimg3">
-        <img src="BeautyTeach3.jpeg" alt="cooking photo 3" style="width:250px;height:200px;">
-      </div>
-      <div id="tcimg4">
-        <img src="BeautyTeach4.jpeg" alt="cooking photo 4" style="width:250px;height:200px;">
-      </div>
-      <div id="tcimg5">
-        <img src="BeautyTeach5.jpeg" alt="cooking photo 5" style="width:250px;height:200px;">
-      </div>
-      <div id="tcimg6">
-        <img src="BeautyTeach6.jpeg" alt="cooking photo 5" style="width:250px;height:200px;">
-      </div>
-      <div id="feedback1">
-        <h3>Feedback</h3>
-      </div>
-      <div id="feedback2">
-        <h3>Feedback</h3>
-      </div>
-      <div id="feedback3">
-        <h3>Feedback</h3>
-      </div>
-      <div id="feedback4">
-        <h3>Feedback</h3>
-      </div>
-      <div id="feedback5">
-        <h3>Feedback</h3>
-      </div>
-      <div id="feedback6">
-        <h3>Feedback</h3>
-      </div>
-      <div id="trecipe">
-        <h3>Recipe Steps</h3>
-        1. Prepare the chicken brine.
-        <br>2. Preheat oven to 350F.
-        <br>3. Finely dice onions.
-      </div>
-     <div class ="leaveButton">
-        <a href="index.html"><button>Leave Class</button></a>
-    </div>
-  </body>
-</html>
+.barRectangle{
+  position:absolute;
+  top:470px;
+  left:100px;
+  width:477px;
+  height:100px;
+  background-color:#D3D3D3;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.firstRectangle{
+  position:absolute;
+  top:495px;
+  left:138px;
+  width:80px;
+  height:50px;
+  background-color:#FFB6C1;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.secondRectangle{
+  position:absolute;
+  top:495px;
+  left:218px;
+  width:80px;
+  height:50px;
+  background-color:#ADD8E6;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.thirdRectangle{
+  position:absolute;
+  top:495px;
+  left:298px;
+  width:80px;
+  height:50px;
+  background-color:#90EE90;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.fourthRectangle{
+  position:absolute;
+  top:495px;
+  left:378px;
+  width:80px;
+  height:50px;
+  background-color:#F5DEB3;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.fifthRectangle{
+  position:absolute;
+  top:495px;
+  left:458px;
+  width:80px;
+  height:50px;
+  background-color:#778899;
+  color: white;
+  font-size:16px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
