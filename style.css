@@ -31,7 +31,6 @@ body {
   background:  #D1D6E8;;
   text-align: center;
 }
-
 /* Home Page */
 .buttonTake button{
   background-color:  #DAD8D8;
@@ -1501,3 +1500,31 @@ body {
   box-sizing: border-box;
 }
 
+/*Review Page*/
+.submitButton button{
+  position: absolute;
+  width: 292px;
+  height: 60px;
+  left: 574px;
+  top: 140px;
+  background: #A2DBAF;
+  font-family: 'robotoregular';
+  font-size: 28px;
+  line-height:60px;
+  text-align: center;
+  color: black;
+}
+.submitButton button:hover{
+  background-color: #66C25C;
+  color: black;
+  align-content: center;
+}
+#reviewbox{
+  position: absolute;
+  top:250px;
+  left:280px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
