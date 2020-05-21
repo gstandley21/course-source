@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+      <title>Student Review</title>
+      <meta name="description" content="">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta charset="utf-8">
+          <link rel="stylesheet" type = "text/css" href="style.css">
+  </head>
+  <header>
+    <div class="header">
+      <h1>Thank you for teaching a course with Course Source!</h1>
+    </div>
+  </header>
+  <body>
+      <div class="current">
+        Please leave some feedback for your students.
+      </div>
+      <div class ="submitButton">
+         <a href="teachAClass.html"><button>Submit Feedback</button></a>
+      </div>
+      <div id="reviewbox">
+          <h3>Feedback for Students</h3>
+      </div>
+      <div id="starrating">
+          <h3>Rate your Students</h3>
+      </div>
+    <input type="text" id="review_feedback" name="des" placeholder="Type feedback here.">
+<html ⚡>
+<head> 
+  <!-- this following code is in reference to code found at the following URL. https://playground.amp.dev/?url=https%3A%2F%2Fpreview.amp.dev%2Fdocumentation%2Fexamples%2Finteractivity-dynamic-content%2Fstar_rating&format=websites&mode=Galaxy+S5 all credit is given to them and we do not claim this code as our own. -->
+  <style amp-custom>
+    .rating {
+      --star-size: 3;
+      padding: 0;
+      border: none;
+      unicode-bidi: bidi-override; direction: rtl;
+      text-align: left; 
+      user-select: none; 
+      font-size: 3em;
+      position: absolute;
+      left:825px;
+      top:335px;
+
+      font-size: calc(var(--star-size) * 1em);
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-tap-highlight-color: transparent;
+      margin-bottom: 1em;
+    }
+    /* the stars */
+    .rating > label {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;  /* magic number to overlap the radio buttons on top of the stars */
+      width: calc(var(--star-size) / 3 * 1.1em);
+    }
+    .rating > *:hover,
+    .rating > *:hover ~ label,
+    .rating:not(:hover) > input:checked ~ label {
+      color: transparent;  /* reveal the contour/white star from the HTML markup */
+      cursor: inherit;  /* avoid a cursor transition from arrow/pointer to text selection */
+    }
+    .rating > *:hover:before,
+    .rating > *:hover ~ label:before,
+    .rating:not(:hover) > input:checked ~ label:before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: gold;
+    }
+    .rating > input {
+      position: relative;
+      transform: scale(3);  /* make the radio buttons big; they don't inherit font-size */
+      transform: scale(var(--star-size));
+      /* the magic numbers below correlate with the font-size */
+      top: -0.5em;  /* margin-top doesn't work */
+      top: calc(var(--star-size) / 6 * -1em);
+      margin-left: -2.5em;  /* overlap the radio buttons exactly under the stars */
+      margin-left: calc(var(--star-size) / 6 * -5em);
+      z-index: 2;  /* bring the button above the stars so it captures touches/clicks */
+      opacity: 0;  /* comment to see where the radio buttons are */
+      font-size: initial; /* reset to default */
+    }
+    form.amp-form-submit-error [submit-error] {
+      color: red;
+    }
+  </style>
+</head>
+<body> 
+  <form id="rating" method="post" action-xhr="https://amp.dev/documentation/examples/interactivity-dynamic-content/star_rating/set" target="_blank">
+    <fieldset class="rating">
+      <input name="rating" type="radio" id="rating5" value="5" on="change:rating.submit">
+      <label for="rating5" title="5 stars">☆</label>
+
+      <input name="rating" type="radio" id="rating4" value="4" on="change:rating.submit">
+      <label for="rating4" title="4 stars">☆</label>
+
+      <input name="rating" type="radio" id="rating3" value="3" on="change:rating.submit">
+      <label for="rating3" title="3 stars">☆</label>
+
+      <input name="rating" type="radio" id="rating2" value="2" on="change:rating.submit" checked="checked">
+      <label for="rating2" title="2 stars">☆</label>
+
+      <input name="rating" type="radio" id="rating1" value="1" on="change:rating.submit">
+      <label for="rating1" title="1 stars">☆</label>
+    </fieldset>
+    <div submit-success>
+      <template type="amp-mustache">
+        <p>Thanks for rating {{rating}} star(s)!</p>
+      </template>
+    </div>
+    <div submit-error>
+      <template type="amp-mustache">
+        Looks like something went wrong. Please try to rate again. {{error}}
+      </template>
+    </div>
+  </form>
+</body>
+</html>
+  </body>
+</html>
