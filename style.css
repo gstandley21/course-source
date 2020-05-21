@@ -1506,7 +1506,7 @@ body {
   width: 292px;
   height: 60px;
   left: 574px;
-  top: 140px;
+  top: 600px;
   background: #A2DBAF;
   font-family: 'robotoregular';
   font-size: 28px;
@@ -1527,4 +1527,26 @@ body {
   height:200px;
   background-color: #DAD8D8;
   border: 1px solid #FFFFFF;
+}
+#starrating{
+  position: absolute;
+  top:250px;
+  left:760px;
+  width: 400px;
+  height:200px;
+  background-color: #DAD8D8;
+  border: 1px solid #FFFFFF;
+}
+#review_feedback{
+  position: absolute;
+  width: 402px;
+  height: 140px;
+  left: 280px;
+  top: 312px;
+  background: #DAD8D8;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  line-height:15px;
+  font-size:15px;
+  text-align:center;
 }
