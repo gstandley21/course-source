@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teach a Class</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type = "text/css" href="style.css"> 
+    </head>
+    <header>
+      <div class="header">
+        <h1>Teach a Class</h1>
+      </div>
+    </header>
+    <body>
+       
+        <div class ="backButton">
+            <a href="index.html"><button>Back</button></a>
+        </div>
+      <div class="step1">
+        <h2>1. Choose a Topic</h2>
+     </div>
+      <div class ="rectangle1"></div>
+      <div id="Art">
+        <button onclick="buttonClicked(this, '#555555', 'white')">Art</button>
+      </div>
+      <div id="Beauty">
+        <button onClick="buttonClicked(this, '#555555', 'white')">Beauty</button>
+      </div>
+      <div id="Cooking">
+        <button onClick="buttonClicked(this, '#555555', 'white')">Cooking</button>
+      </div>
+      <div id="Fitness">
+        <button onClick="buttonClicked(this, '#555555', 'white')">Fitness</button>
+      </div>
+      <div id="Other">
+        <button onClick="buttonClicked(this, '#555555', 'white')">Other</button>
+      </div>
+
+     <div class="step2">
+        <h2>2. Write a Description</h2>
+     </div>
+    <input type="text" id="textdes" name="des" placeholder="type class description here...">
+     <div class="step3">
+       <h2>3. Materials Needed</h2>
+     </div>
+     <input type="text" id="textmat" name="mat" placeholder="type any materials needed here...">
+     <div class="rectangle2a"></div>
+    <div class="step4">
+      <h2>4. Add Files</h2>
+     </div>
+      <div class="rectangle3">
+            <button class="btn1">Upload a file</button>
+            <input type="file" id ="file1" name="file1">
+            <button class="btn2">Upload a file</button>
+            <input type="file" id="file2" name="file2">
+      </div>
+      <div class="step6">
+        <h2>6. Choose a Template</h2>
+      </div>
+      <div class="rectangle4"></div> 
+      <div class="step5">
+        <h2>5.Invite Friends</h2>
+      </div>
+      <div class="rectangle5"></div>
+      <div class="step9">
+          <h2>9. Set Date & Time</h2>
+      </div>
+      <div class="name5"></div>
+      <input type="text" id="textname" name="name" placeholder="type class name here..." autocomplete="off">
+       <div class="step7">
+          <h2>7. Name your class</h2>
+        </div>
+      <div class="maxNumber"></div>
+      <input type="Number" id="textNumber" name="Number" placeholder="Max Number" autocomplete="off">
+      <div class="step8">
+        <h2>8. Max # of students<h2>
+        </div>
+      <div id="doneButton"></div>
+      <form>
+        <input type="datetime-local" id="classtime" name="classtime">
+      </form>  
+      <script>
+          let type;
+          
+          function buttonClicked(elmnt, backClr, clr){
+            if(elmnt.style.backgroundColor != 'rgb(85, 85, 85)'){
+              elmnt.style.backgroundColor = backClr;
+              elmnt.style.color = clr;
+              console.log(elmnt.outerHTML);
+              if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Art</button>'){
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="artRegistration.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Beauty</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="beautyRegistration.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Cooking</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="cookingRegistration.html";
+                console.log(type);
+              }else if(elmnt.outerHTML == '<button onclick="buttonClicked(this, \'#555555\', \'white\')" style="background-color: rgb(85, 85, 85); color: white;">Fitness</button>'){
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Other").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Other</button>';
+                type="fitnessRegistration.html";
+                console.log(type);
+              }else{
+                document.getElementById("Art").innerHTML='<button onclick="buttonClicked(this, \'#555555\', \'white\')">Art</button>';
+                document.getElementById("Beauty").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Beauty</button>';
+                document.getElementById("Cooking").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Cooking</button>';
+                document.getElementById("Fitness").innerHTML='<button onClick="buttonClicked(this, \'#555555\', \'white\')">Fitness</button>';
+                type="otherRegistration.html";
+              }
+            } else{
+              elmnt.style.backgroundColor = '#C4C4C4';
+              elmnt.style.color='black';
+            }
+            document.getElementById("doneButton").innerHTML="<a href=" + type +"><button>Done</button></a>";
+          }
+       </script> 
+     
+  </body>
+    
+</html>
