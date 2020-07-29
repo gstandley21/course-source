@@ -780,14 +780,14 @@ body {
   left:50px;
   background-color: #DAD8D8;
   border: 1px solid #FFFFFF;
-  width:600px;
+  width:560px;
   height:175px;
   font-size:14px;
 } 
 /*Art Class Images*/
 #aimg1{
   position:absolute;
-  top:500px;
+  top:470px;
   left:1175px;
   width:150px;
   height:100px;
@@ -795,7 +795,7 @@ body {
 }
 #aimg2{
   position:absolute;
-  top:500px;
+  top:470px;
   left:995px;
   width:150px;
   height:100px;
@@ -803,7 +803,7 @@ body {
 }
 #aimg3{
   position:absolute;
-  top:500px;
+  top:470px;
   left:815px;
   width:150px;
   height:100px;
@@ -811,16 +811,16 @@ body {
 }
 #aimg4{
   position:absolute;
-  top:625px;
-  left:815px;
+  top:210px;
+  left:1175px;
   width:150px;
   height:100px;
   border: 1px solid #FFFFFF;
 }
 #aimg5{
   position:absolute;
-  top:625px;
-  left:995px;
+  top:340px;
+  left:1175px;
   width:150px;
   height:100px;
   border: 1px solid #FFFFFF;
